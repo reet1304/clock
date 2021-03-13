@@ -6,7 +6,7 @@ TM1637 tm1637(CLK,DIO);
 
 // Date and time functions using a DS3231 RTC connected via I2C and Wire lib
 #include <Wire.h>
-#include "RTClib.h" // с добавленной RTC_DS3231::getTemperature()
+#include <RTClib.h> // локальная библиотека в lib, с добавленной RTC_DS3231::getTemperature()
 RTC_DS3231 rtc;
 int hh, mm; 
 
